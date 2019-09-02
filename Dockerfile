@@ -4,4 +4,4 @@ ARG awscli_version=1.16.229
 
 WORKDIR /workspace
 
-RUN pip install --upgrade "awscli==${awscli_version}"
+RUN pip install --no-cache --upgrade "awscli==${awscli_version}"
