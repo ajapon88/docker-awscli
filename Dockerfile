@@ -6,3 +6,6 @@ WORKDIR /workspace
 
 RUN apk add --no-cache groff && \
     pip install --no-cache --upgrade "awscli==${awscli_version}"
+
+ENTRYPOINT ["aws"]
+CMD ["help"]
